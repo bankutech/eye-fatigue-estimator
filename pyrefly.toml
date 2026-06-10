@@ -1,0 +1,4 @@
+python-interpreter-path = "c:\\Users\\Administrator\\ml\\.venv\\Scripts\\python.exe"
+site-package-path = ["c:\\Users\\Administrator\\ml\\.venv\\Lib\\site-packages"]
+search_path = ["."]
+enabled-ignores = ["type", "pyrefly", "pyre"]

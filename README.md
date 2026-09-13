@@ -1,9 +1,10 @@
-# Eye Fatigue Estimator
+# eye-fatigue-estimator
 
+## Overview
 A CPU-friendly PyTorch machine learning pipeline for predicting a continuous eye fatigue score (0-100) from face images.
 The project uses Transfer Learning with MobileNetV2 and relies on MediaPipe for automated label generation and face cropping during data preparation.
 
-## 🌟 Key Features
+##  Key Features
 - **Neural Network Regression**: Outputs a continuous fatigue score (0 = Fully Alert, 100 = Very Fatigued) using a custom MobileNetV2 architecture.
 - **CPU Optimized**: Designed for fast, real-time inference on standard laptops without requiring a GPU.
 - **Auto-Labeling Pipeline**: Extracts Eye Aspect Ratio (EAR) via MediaPipe Face Mesh to generate training labels automatically from raw images.
@@ -14,11 +15,11 @@ The project uses Transfer Learning with MobileNetV2 and relies on MediaPipe for 
   - **Drowsiness Alarm**: A background audio alarm triggers if your eyes remain closed for more than 2 seconds.
   - **Full Screen HUD**: Provides an immersive heads-up display of your stats.
 
-## 📂 Project Structure
+##  Project Structure
 ```
 project_root/
 │
-├── run.py                # 🚀 Main pipeline orchestrator (Run this!)
+├── run.py                #  Main pipeline orchestrator (Run this!)
 ├── config.py             # Hyperparameters, paths, and EAR mapping
 ├── requirements.txt      # Python dependencies
 ├── README.md             # Documentation
@@ -38,7 +39,7 @@ project_root/
     └── inference.py      # Real-time webcam script powered by PyTorch
 ```
 
-## 🛠️ Setup Instructions
+## ️ Setup Instructions
 
 ### 1. Create a Virtual Environment (Recommended)
 ```bash
@@ -54,7 +55,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 🚀 How to Run
+##  How to Run
 
 The easiest way to use the project is through the `run.py` orchestrator script. It handles everything from data preparation to live inference.
 
@@ -77,8 +78,14 @@ If you want to prepare data, train the PyTorch model, and evaluate its performan
 python run.py --mode train-only
 ```
 
-## ⚙️ Customization
+## ️ Customization
 You can easily customize the behavior of the network and the pipeline by modifying `config.py`:
 - **Hyperparameters:** Learning Rate, Epochs, Batch Size
 - **Image Size:** Default is `224x224` (MobileNetV2 standard)
 - **EAR Mapping:** Adjust `EAR_MAX` (alert) and `EAR_MIN` (fatigued) if the system is too sensitive or not sensitive enough for your specific eye shape.
+
+## Getting Started
+Please refer to the source files for specific installation and usage instructions. Ensure that your local environment meets the standard requirements for the associated technologies.
+
+## Project Structure
+This project is organized into standard directories. Key configuration files and primary source code are located in the root directory.

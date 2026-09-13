@@ -1,4 +1,4 @@
-# eye-fatigue-estimator
+# eye fatigue estimator
 
 ## Overview
 A CPU-friendly PyTorch machine learning pipeline for predicting a continuous eye fatigue score (0-100) from face images.
